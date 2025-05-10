@@ -8,7 +8,7 @@ public class SQLQueryBuilder {
     private List<String> whereClauses = new ArrayList<>();
     private String orderBy;
     public SQLQueryBuilder select(String... cols){
-        columns.addAll(Arrays.asList(cols)); // Agora sim!
+        columns.addAll(Arrays.asList(cols));
         return this;
     }
     public SQLQueryBuilder from(String table){
